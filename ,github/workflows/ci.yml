@@ -19,7 +19,8 @@ jobs:
           python-version: "3.13.7" 
       - name: Install dependencies
         run: pip install -r requirements-dev.txt   
+      - name: Check Linting
+        run: flake8 .
       - name: Run tests
         run: pytest
-      - name: Check Linting
-        run: flake8 .     
+           
