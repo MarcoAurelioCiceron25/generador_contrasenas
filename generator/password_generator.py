@@ -1,5 +1,6 @@
-import random 
-import string 
+import random
+import string
+
 
 def generator_password(length=12):
     characters = (
@@ -9,15 +10,17 @@ def generator_password(length=12):
         string.punctuation
     )
 
-    password ="".join(random.choice(characters) for _ in range(length))
+    password = "".join(random.choice(characters) for _ in range(length))
     return password
 
+
 def has_uppercase(password):
-    return any(c.isupper() for c in password) 
+    return any(c.isupper() for c in password)
+
 
 def has_number(password):
-    return any(c.isdigit() for c in password)    
+    return any(c.isdigit() for c in password)
+
 
 def has_symbol(password):
-    return any(c in string.punctuation for c in password)    
-
+    return any(c in string.punctuation for c in password)

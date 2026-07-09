@@ -1,6 +1,7 @@
 import sys
 from generator.password_generator import generator_password
 
+
 def main():
 
     if len(sys.argv) < 2:
@@ -23,4 +24,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main()
