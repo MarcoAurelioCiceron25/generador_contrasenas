@@ -1,8 +1,8 @@
-from python: 3.13.7
+FROM python:3.13.7
 
-workdir /app
+WORKDIR /app
 
-copy . .
+COPY . .
 
-run pip install -r requirements-dev.txt
-cmd ["python", "main.py", "12"]
+RUN pip install -r requirements-dev.txt
+CMD ["python", "main.py", "12"]
