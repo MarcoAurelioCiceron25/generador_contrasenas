@@ -27,8 +27,8 @@ jobs:
         uses: docker/login-action@v4
         with:
           registry: ghcr.io
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          username: ${{ marcoaureliociceron25 }}
+          password: ${{ secrets.GHCR_PAT}}
       - name: Build and push
         uses: docker/build-push-action@v6
         with:
