@@ -16,7 +16,7 @@ jobs:
       - name: Setup Python 
         uses: actions/setup-python@v4
         with:
-          python-version: "3.13.7" 
+          python-version: "3.12" 
       - name: Install dependencies
         run: pip install -r requirements-dev.txt   
       - name: Check Linting
@@ -34,6 +34,5 @@ jobs:
         with:
           push: true
           tags: ghcr.io/marcoaureliociceron25/generador_contrasenas:latest
-
 
           
