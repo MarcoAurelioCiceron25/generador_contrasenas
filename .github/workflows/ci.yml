@@ -44,4 +44,4 @@ jobs:
         with:
           push: true
           # Usamos "github.repository" en minúsculas para evitar problemas de escritura
-          tags: ghcr.io/${{ github.repository }}:latest
+          tags: ghcr.io/marcoaureliociceron25/generador_contrasenas:latest
