@@ -5,4 +5,6 @@ WORKDIR /app
 COPY . .
 
 RUN pip install -r requirements-dev.txt
-CMD ["python", "main.py", "12"]
+
+ENTRYPOINT [ "python", "main.py" ]
+CMD  [ "15" ]
